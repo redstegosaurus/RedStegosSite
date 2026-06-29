@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frutiger Aero Site</title>
+  <link rel="stylesheet" href="https://unpkg.com/7.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Electricity Lightning - https://www.cursors-4u.com/cursor/cur1-11 -->
+  <link rel="stylesheet" href="https://cdn.cursors-4u.net/cursors/animated/cur1-11-47e999d7-32.css">
+  <!-- End www.Cursors-4U.com Code -->
+</head>
+<body>
+  <img class="corner-gif top-left" src="https://i.postimg.cc/MG72bDjP/Windows-XP.gif" alt="Welcome">
+  <img class="corner-gif top-right" src="https://i.postimg.cc/kXKV8rgW/anythingbut.gif" alt="Anything But">
+  <div class="container">
+    <div class="one">
+      <img src="PIXEL LINK HERE" alt="" style="width: 19px;"> frutiger aero~
+      <br>
+      <img src="IMG LINK HERE" alt="" style="width: 50px; margin-top: 15px;">
+      <div class="oneone">
+        Mood: Excited <img src="PIXEL LINK HERE" alt=""> <br>
+        <img src="IMG LINK HERE" alt="">
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="twotwo">
+        <input id="search" type="text" placeholder="Search" style="width: 160px; font-family: 'MS San Serif';">
+        <div class="hello">
+          <mark>about me</mark><br>
+          <img src="PIXEL LINK HERE" alt=""> name<br>
+          sum shit <br>
+          <img src="PIXEL LINK HERE" alt=""> <span class="age">age</span> fruitiger aero type xi<br>
+          <img src="IMG LINK HERE" alt="" style="width: 125px;">
+        </div>
+      </div>
+      <img src="IMG LINK HERE" alt="" style="width: 190px;">
+    </div>
+
+    <div class="three">
+      <div class="phone">
+        <light>1</light> <light>2</light> <light>3</light><br>
+        <light>4</light> <light>5</light> <light>6</light><br>
+        <light>7</light> <light>8</light> <light>9</light><br>
+        <dark>*</dark> <light>0</light> <dark>#</dark>
+        <div class="icon">
+          <img src="IMG LINK HERE" alt="" style="width: 60px;">
+          <img src="IMG LINK HERE" alt="" style="width: 60px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="tabs">
+    <menu role="tablist" aria-label="Tabs Template">
+      <button role="tab" aria-controls="tab-A" aria-selected="true" style="font-family: 'MS San Serif';">TAB A TITLE</button>
+      <button role="tab" aria-controls="tab-B" aria-selected="false" style="font-family: 'MS San Serif';">TAB B TITLE</button>
+    </menu>
+    <article role="tabpanel" id="tab-A">
+      <div class="gray"><guest>Guest User (02:38)</guest><br>text goes here</div>
+      <div class="white"><name>Name (02:42)</name><br>text goes here <img src="PIXEL LINK HERE" alt="" style="width: 15px;"></div>
+      <div class="gray"><guest>Guest User (02:45)</guest><br>text goes here</div>
+      <div class="white"><name>Name (02:59)</name><br>text goes here <img src="PIXEL LINK HERE" alt="" style="width: 15px;"></div>
+      <div class="gray"><guest>Guest User (03:01) <img src="https://i4.glitter-graphics.org/pub/1575/1575014z1cafzz3yq.gif" alt=""></guest><br>text goes here</div>
+    </article>
+    <article role="tabpanel" id="tab-B" hidden>
+      <div class="gray"><guest>Guest User (04:27)</guest><br>text goes here</div>
+      <div class="white"><name>Name (04:29)</name><br>text goes here <img src="PIXEL LINK HERE" alt="" style="width: 15px;"></div>
+      <div class="gray"><guest>Guest User (05:02)</guest><br>text goes here</div>
+      <div class="white"><name>Name (05:18)</name><br>text goes here <img src="PIXEL LINK HERE" alt="" style="width: 15px;"></div>
+      <div class="gray"><guest>New Friend (05:34)</guest><br>text goes here</div>
+    </article>
+  </section>
+
+  <div class="buttons-n-blinkers">
+    <div>
+      <img src="BLINKIE LINK HERE" alt="" style="margin-left: 3px;">
+      <img src="BLINKIE LINK HERE" alt="">
+      <img src="BLINKIE LINK HERE" alt="">
+      <img src="BLINKIE LINK HERE" alt="">
+      <img src="BLINKIE LINK HERE" alt="">
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('[role="tablist"]').forEach(tablist => {
+      const tabs = tablist.querySelectorAll('[role="tab"]');
+      const panels = tablist.parentNode.querySelectorAll('[role="tabpanel"]');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.setAttribute('aria-selected', 'false'));
+          panels.forEach(p => p.hidden = true);
+
+          tab.setAttribute('aria-selected', 'true');
+          const panel = document.getElementById(tab.getAttribute('aria-controls'));
+          if (panel) panel.hidden = false;
+        });
+      });
+    });
+
+    [...document.querySelectorAll('.buttons-n-blinkers')]
+      .map(div => div.children[0])
+      .forEach(innerDiv => {
+        const follower = innerDiv.cloneNode(true);
+        follower.classList.add('follower');
+        innerDiv.parentElement.appendChild(follower);
+        follower.classList.add('play');
+        innerDiv.classList.add('play');
+      });
+  </script>
+</body>
+</html>

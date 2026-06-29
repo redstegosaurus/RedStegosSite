@@ -1,0 +1,268 @@
+/* Import external 7.css styles and custom fonts */
+@font-face {
+  font-family: 'MS San Serif';
+  src: url('https://cdn.glitch.me/9bbfdfb3-4bfa-4c39-8743-5621c8b9df21/MS%20Sans%20Serif.ttf');
+}
+@font-face {
+  font-family: 'DigiBop';
+  src: url('https://dl.dropbox.com/s/8maabpvuycdrlai/DigiBop-Regular.ttf');
+}
+@font-face {
+  font-family: 'kiwi';
+  src: url('https://dl.dropbox.com/s/388cvx0do21kj3n/KiwiSoda.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  /*overflow: hidden;*/
+  font-family: 'MS San Serif', sans-serif;
+  background-color: #249d9f;
+  background-image: url('https://frutigeraeroarchive.org/images/wallpapers/windows_xp/windows_xp_14.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.corner-gif {
+  position: fixed;
+  width: 120px;
+  height: auto;
+  z-index: 999;
+}
+
+.corner-gif.top-left {
+  top: 10px;
+  left: 10px;
+  width: 520px ; 
+  height: auto;
+}
+
+.corner-gif.top-right {
+  top: 10px;
+  right: 10px;
+}
+
+.corner-gif.bottom-left {
+  bottom: 10px;
+  left: 10px;
+}
+
+.corner-gif.bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+
+.container {
+  margin: auto;
+  width: 650px;
+  height: 600px;
+  position: relative;
+  top: 45px;
+}
+
+.one {
+  background: linear-gradient(180deg, rgba(204, 255, 124, 1) 0%, rgba(255, 255, 255, 1) 50%);
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 190px;
+  height: 95px;
+  padding: 5px;
+  font-size: 1.125em;
+}
+
+.oneone {
+  position: absolute;
+  top: 2.5em;
+  left: 60px;
+}
+
+.two {
+  margin-top: 10px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 190px;
+  height: 290px;
+}
+
+.twotwo {
+  background: #01f1f1;
+  width: 160px;
+  height: 235px;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 1px;
+  margin-left: 1px;
+  margin-bottom: 2.75px;
+  box-shadow: inset 0 0 8px 8px white;
+}
+
+.hello {
+  background: white;
+  width: 145px;
+  height: 195px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 1px;
+  margin-bottom: 5px;
+  border: 2px inset #01f1f1;
+  box-shadow: inset 13px 0 6px -10px rgba(66, 66, 66, 0.3), inset -13px 0 6px -10px rgba(66, 66, 66, 0.3), inset 0 13px 6px -10px #f0f0f0, inset 0 0 0 -10px rgba(66, 66, 66, 0.3);
+  overflow-y: scroll;
+  font-size: 1.125em;
+  line-height: 1.375em;
+}
+
+.age {
+  font-family: 'kiwi';
+  font-size: 1.375em;
+  color: white;
+  font-weight: bold;
+  filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black) drop-shadow(0px 1px #9fe11d) drop-shadow(0 -1px #9fe11d) drop-shadow(1px 0 #9fe11d) drop-shadow(-1px 0 #9fe11d);
+}
+
+.three {
+  margin-top: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 60, 140, 1) 100%);
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 190px;
+  height: 142px;
+}
+
+.phone {
+  box-shadow: inset 13px 0 6px -10px rgba(66, 66, 66, 0.3), inset -13px 0 6px -10px rgba(66, 66, 66, 0.3), inset 0 13px 6px -10px #f0f0f0, inset 0 0 0 -10px rgba(66, 66, 66, 0.3);
+  background: white;
+  border: 1px solid black;
+  width: 175px;
+  height: 127px;
+  padding: 5px;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+light, .light {
+  background: linear-gradient(to bottom, #f2f2f2, #dcdcdc);
+  border: 1px solid #a9a9a9;
+  border-radius: 2px;
+  box-shadow: inset 0 1px #ffffff, inset 0 -1px #cccccc;
+  font-family: 'MS San Serif';
+  font-size: 1.125em;
+  color: black;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  padding-top: 5px;
+  padding-left: 12px;
+  margin-top: 2px;
+  text-align: center;
+}
+
+dark, .dark {
+  background: black;
+  border: 1px solid #808080;
+  border-radius: 2px;
+  font-family: 'MS San Serif';
+  font-size: 1.125em;
+  color: white;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  padding-top: 5px;
+  padding-left: 12px;
+  margin-top: 2px;
+  box-shadow: 0 0 8px 8px white inset;
+  text-align: center;
+}
+
+.icon {
+  width: 45px;
+  height: 120px;
+  position: absolute;
+  left: 131px;
+  top: 27.75em;
+}
+
+.tabs {
+  width: 425px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.tabs [role="tabpanel"] {
+  height: 250px;
+  padding: 0px !important;
+  overflow-y: scroll;
+}
+
+[role="tab"]:nth-of-type(2)[aria-selected="false"],
+[role="tab"]:nth-of-type(3)[aria-selected="false"] {
+  border-left: none;
+}
+
+[role="tab"]:first-of-type {
+  margin-left: -3px !important;
+  padding-left: -3px !important;
+}
+
+.gray {
+  width: auto;
+  background: #e1e1e1;
+  padding: 5px;
+  line-height: 1.25em;
+}
+
+guest, .guest {
+  color: #0078c8;
+}
+
+.white {
+  width: 397px;
+  background: white;
+  padding: 5px;
+  line-height: 1.25em;
+}
+
+.buttons-n-blinkers {
+  margin-top: 10px;
+}
+
+.buttons-n-blinkers > div {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.buttons-n-blinkers img {
+  display: inline-block;
+}
+
+.follower {
+  opacity: 0.8;
+}
+
+.play {
+  animation: marquee 12s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.window {
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 5px !important;
+}
+
+/* Electricity Lightning - https://www.cursors-4u.com/cursor/cur1-11 */
+* {
+  cursor: url('https://cdn.cursors-4u.net/css-previews/electricity-lightning-e3423565-css.webp') 8 4, auto !important;
+}
+/* End www.Cursors-4U.com Code */
