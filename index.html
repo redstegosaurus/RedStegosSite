@@ -1,107 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frutiger Aero Site</title>
-  <link rel="stylesheet" href="https://unpkg.com/7.css">
-  <link rel="stylesheet" href="style.css">
-  <!-- Electricity Lightning - https://www.cursors-4u.com/cursor/cur1-11 -->
-  <link rel="stylesheet" href="https://cdn.cursors-4u.net/cursors/animated/cur1-11-47e999d7-32.css">
-  <!-- End www.Cursors-4U.com Code -->
+    <title>Page Title</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-  <img class="corner-gif top-right" src="https://i.postimg.cc/kXKV8rgW/anythingbut.gif" alt="Anything But">
-  
-  <div class="container">
-    <div class="one">
-      <img src="https://frutigeraeroarchive.org/images/resources/globes/globes_9.png" alt="" style="width: 19px;"> My Portfolo Site
-      <br>
-      <img src="https://frutigeraeroarchive.org/images/resources/people/people_28.png" alt="" style="width: 50px; margin-top: 15px;">
-      <div class="oneone">
-        RedStego <img src="PIXEL LINK HERE" alt=""> <br>
-        <img src="IMG LINK HERE" alt="">
-      </div>
-    </div>
-
-    <div class="two">
-      <div class="twotwo">
-        <div class="hello">
-          <mark>about me</mark><br>
-          <img src="PIXEL LINK HERE" alt=""> name<br>
-           My name is Cooper Trahan and I'm a <mark>Computer Engineering Major</mark>  at University of Memphis, and Aspiring space systems engineer. <br>
-          <a class="resume-download" href="Cooper T Resume-2.pdf" download>
-            <img src="https://frutigeraeroarchive.org/images/resources/miscellaneous/miscellaneous_91.png" alt="Download Icon">
-            <span>Download My Resume (PDF)</span>
-          </a>
-
-          <img src="IMG LINK HERE" alt="" style="width: 125px;">
+  <div class="page-wrapper">
+    
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+        <div class="brand-inline">
+            <img src="dorficperson.png" alt="User Icon" class="bubble-icon">
+            <span class="brand-text">RedStego</span>
         </div>
+
+      <h4> About Me</h4>
+      <p>Hi my name is Cooper Trahan(RedStego), I am a Computer Engineering major at University of Memphis and this is my portfolio site. I hpe you find everything you need here.</p>
+      <h4>Whats included?</h4>
+      <p>My github, Resume, Letters of Reccomendation, Transcript, project links, Youtube, and MORE!</p>
+       <div class="ipod-player">
+        <div class="ipod-screen">
+            <div class="track-info">
+            <strong>Now Playing</strong><br>
+            Fruitiger Aero Theme
+            </div>
+        </div>
+
+        <div class="ipod-controls">
+            <button onclick="document.getElementById('bgm').play()"></button>
+            <button onclick="document.getElementById('bgm').pause()"></button>
+            <button onclick="document.getElementById('bgm').currentTime = 0"></button>
+        </div>
+        </div>
+
+        <audio id="bgm" autoplay loop muted>
+            <source src="FOTOSHOPPE CO. - Welcome to your New Wii Phone.mp3" type="audio/mpeg">
+        </audio>
+
+        <script>
+            window.addEventListener("load", () => {
+                const bgm = document.getElementById("bgm");
+                bgm.muted = false;
+            });
+        </script>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- TOP ANNOUNCEMENT BOX -->
+      <div class="announcement-box">
+        <h3>Welcome to my portfolio</h3>
+        <p>Here is a center to access all things that have to do with my professional career, history, and projects.</p>
       </div>
-      <img src="IMG LINK HERE" alt="" style="width: 190px;">
-    </div>
 
+      <!-- GRID OF CONTENT BOXES -->
+      <div class="content-grid">
 
+        <div class="content-card">
+          <h4 class="category">RESUME</h4>
+          <h3 class="title">Download my resume</h3>
+          <p class="desc">This site can help you protect yourself against internet threats.</p>
+          <a href="Cooper.T Resume.pdf" download class="launch-btn">+ Download Resume</a>
+
+        </div>
+
+        <div class="content-card">
+          <h4 class="category">GITHUB</h4>
+          <h3 class="title">Go check out my Github</h3>
+          <p class="desc">All of my projects are located here, this includes hardware and software projects.</p>
+          <a href="https://github.com/redstegosaurus" class="launch-btn">+ Open My Github!</a>
+        </div>
+
+        <div class="content-card">
+          <h4 class="category">YOUTUBE</h4>
+          <h3 class="title">Check out my video demonstrations!</h3>
+          <p class="desc">Go see how I made and put together various projects here.</p>
+          <a href="https://github.com/redstegosaurus" class="launch-btn">+ Open My Github!</a>
+        </div>
+
+        <div class="content-card">
+          <h4 class="category">LETTERS OF REC</h4>
+          <h3 class="title">Don't take my word for it!</h3>
+          <p class="desc">Here are links to letters of reccomendations from my previous employers</p>
+          <a href="rec.pdf" download class="launch-btn">+ Download Letter #1</a>
+        </div>
+
+        <div class="content-card">
+          <h4 class="category">LINKEDIN</h4>
+          <h3 class="title">The secret of success</h3>
+          <p class="desc">Keep up with my professional endevors here.</p>
+          <a href="https://www.linkedin.com/in/copperdtrahan?" class="launch-btn">+ Open My LinkedIn!</a>
+        </div>
+
+        <div class="content-card">
+          <h4 class="category">HANDSHAKE</h4>
+          <h3 class="title">Have you seen me?</h3>
+          <p class="desc">Go look at my handshake account for my most updated professional information.</p>
+          <a href="https://memphis.joinhandshake.com/profiles/cooperdanieltrahan" class="launch-btn">+ Open My Handshake!</a>
+        </div>
+
+      </div>
+
+    </main>
   </div>
 
-  <section class="tabs">
-    <menu role="tablist" aria-label="Tabs Template">
-      <button role="tab" aria-controls="tab-A" aria-selected="true" style="font-family: 'MS San Serif';">PROJECTS</button>
-      <button role="tab" aria-controls="tab-B" aria-selected="false" style="font-family: 'MS San Serif';">TAB B TITLE</button>
-    </menu>
-    <article role="tabpanel" id="tab-A">
-      <div class="gray"><guest>NASA CubeSat (June 2026 - Aug 2026)</guest><br>blah blah blah blah blah blah</div>
-      <div class="white"><name>Python Rocket Trajectory Sim (May 2026 - April 2026)</name><br>text goes here <img src="PIXEL LINK HERE" alt="" style="width: 15px;"></div>
-      <div class="gray"><guest>Robotic Automated Arm and Control System (June 2026 - July 2026)</guest><br>text goes here</div>
-      <div class="white"><name>Name (02:59)</name><br>text goes here <img src="PIXEL LINK HERE" alt="" style="width: 15px;"></div>
-      <div class="gray"><guest>Guest User (03:01) <img src="https://i4.glitter-graphics.org/pub/1575/1575014z1cafzz3yq.gif" alt=""></guest><br>text goes here</div>
-    </article>
-    <article role="tabpanel" id="tab-B" hidden>
-      <div class="gray"><guest>Guest User (04:27)</guest><br>text goes here</div>
-      <div class="white"><name>Name (04:29)</name><br>text goes here <img src="PIXEL LINK HERE" alt="" style="width: 15px;"></div>
-      <div class="gray"><guest>Guest User (05:02)</guest><br>text goes here</div>
-      <div class="white"><name>Name (05:18)</name><br>text goes here <img src="PIXEL LINK HERE" alt="" style="width: 15px;"></div>
-      <div class="gray"><guest>New Friend (05:34)</guest><br>text goes here</div>
-    </article>
-  </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a href="#">Help</a> |
+    <a href="#">Accessibility</a> |
+    <a href="#">Legal</a> |
+    <a href="#">Contact us</a>
+  </footer>
+</body>
 
-  <div class="buttons-n-blinkers">
-    <div>
-      <img src="BLINKIE LINK HERE" alt="" style="margin-left: 3px;">
-      <img src="BLINKIE LINK HERE" alt="">
-      <img src="BLINKIE LINK HERE" alt="">
-      <img src="BLINKIE LINK HERE" alt="">
-      <img src="BLINKIE LINK HERE" alt="">
-    </div>
-  </div>
 
-  <script>
-    document.querySelectorAll('[role="tablist"]').forEach(tablist => {
-      const tabs = tablist.querySelectorAll('[role="tab"]');
-      const panels = tablist.parentNode.querySelectorAll('[role="tabpanel"]');
 
-      tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-          tabs.forEach(t => t.setAttribute('aria-selected', 'false'));
-          panels.forEach(p => p.hidden = true);
-
-          tab.setAttribute('aria-selected', 'true');
-          const panel = document.getElementById(tab.getAttribute('aria-controls'));
-          if (panel) panel.hidden = false;
-        });
-      });
-    });
-
-    [...document.querySelectorAll('.buttons-n-blinkers')]
-      .map(div => div.children[0])
-      .forEach(innerDiv => {
-        const follower = innerDiv.cloneNode(true);
-        follower.classList.add('follower');
-        innerDiv.parentElement.appendChild(follower);
-        follower.classList.add('play');
-        innerDiv.classList.add('play');
-      });
-  </script>
 </body>
 </html>
