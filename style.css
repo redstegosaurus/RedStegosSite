@@ -92,9 +92,24 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   margin-bottom: 20px;
+   margin-top: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 
 }
+
+.Secondary-box {
+  background: #fff8c6;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+   margin-top: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  position: center;
+  display: grid;
+
+}
+
 
 /* GRID */
 .content-grid {
@@ -233,11 +248,19 @@ aside {
 }
 
 .projects-section {
-  margin-top: 60px;
-  padding: 20px;
-  background: rgba(255,255,255,0.25);
-  backdrop-filter: blur(12px);
-  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap to the next line if screen is too small */
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 2rem; /* Adds space between the cards */
+}
+
+.projects-section-projs {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to drop to the next line */
+  justify-content: center; /* Centers the cards */
+  gap: 1rem; /* Space between cards */
+  max-width: 1200px; /* Optional: Limits total width of the row */
+  margin: 0 auto; /* Centers the whole section */
 }
 
 .projects-section h2 {
@@ -265,24 +288,45 @@ aside {
 }
 
 .project-card {
-  margin: 40px auto;
-  max-width: 700px;
-  background: rgba(255,255,255,0.3);
+  /* Grow: 1, Shrink: 1, Basis: ~32% to fit 3 per row */
+  flex: 0 0 calc(30% - 2rem); 
+  
+  /* Maximum width to prevent stretching on huge screens */
+  max-width: 400px; 
+  
+  /* Styling */
+  background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  
+  /* Remove display: flex from here; the parent handles layout */
+  display: flex;
+  flex-direction: column; /* Keeps image/text stacked inside the card vertically */
 }
 
 .project-card img {
   width: 100%;
-  border-radius: 15px;
-  margin-bottom: 15px;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 
 .project-card h3 {
   color: #ff8c00;
   margin-bottom: 10px;
+  font-size: 1.25rem;
 }
 
+/* Link styling */
+.project-card h3 a {
+  color: #ff8c00;
+  text-decoration: none;
+}
 
+.project-card h3 a:hover {
+  text-decoration: underline;
+  color: #e65100;
+}

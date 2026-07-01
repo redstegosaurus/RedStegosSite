@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page Title</title>
+    <title>CDT Website Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,7 +16,7 @@
         </div>
 
       <h4> About Me</h4>
-      <p>Hi my name is Cooper Trahan(RedStego), I am a Computer Engineering major at University of Memphis and this is my portfolio site. I hpe you find everything you need here.</p>
+      <p>Hi my name is Cooper Trahan(RedStego), I am a Computer Engineering major at University of Memphis and this is my portfolio site. I hope you find everything you need here.</p>
       <h4>Whats included?</h4>
       <p>My github, Resume, Letters of Reccomendation, Transcript, project links, Youtube, and MORE! (here is some music to listen to while you browse) </p>
        <div class="ipod-player">
@@ -103,38 +103,48 @@
         </div>
 
       </div>
+      <div class="Secondary-box">
+        <h4>Projects.</h4>
+       <p>Below you can view my current and previous projects, alongside their specific Github links when appropriate.</p>
+     </div>
+
+      
 
     </main>
  
   </div>
-
-   <section id="projects" class="projects-section">
-        <h2>Current Projects</h2>
-
-        <nav class="project-nav">
-            <a href="#proj-robot-arm">Robot Arm</a>
-            <a href="#proj-rocket-sim">Rocket Trajectory Sim</a>
-            <a href="#proj-cubesat">NASA CubeSat</a>
-            <a href="#proj-radar">Arduino Radar</a>
-        </nav>
-
+  
+    <section id="projects list" class="projects-section-projs">
+      
         <article id="proj-robot-arm" class="project-card">
             <img src="Screenshot 2026-06-29 121937.png" alt="Robot Arm Project">
-            <h3>Robotic Automated Arm and Control System</h3>
+            <h3><a href="https://github.com/redstegosaurus/Automated-Robotic-Arm-and-Control-System">Robotic Automated Arm and Control System</a></h3>
             <p>This project features a fully automated robotic arm built and programmed to perform precise, repeatable movements using microcontroller‑based control logic. The system integrates multiple servos, sensor feedback, and custom motion routines to execute tasks with accuracy and stability.</p>
         </article>
 
         <article id="proj-radar" class="project-card">
             <img src="IMG_1684.jpeg" alt="Arduino Radar">
-            <h3>Arduino Ultrasonic Radar</h3>
-            <p>This project uses an Arduino Uno, HC‑SR04 ultrasonic sensor, SG90 servo motor, and a breadboard to create a simple scanning radar system. The servo sweeps the ultrasonic sensor across a set angle range, while the Arduino measures distance using timed echo pulses. Each reading is processed in the loop and sent over serial to visualize detected objects in real time. The system demonstrates basic sensor interfacing, servo control, timing functions, and serial communication in Arduino.</p>
+            <h3><a href="https://github.com/redstegosaurus/Automated-Robotic-Arm-and-Control-System">Arduino Ultrasonic Radar </a></h3>
+            <p>This project uses an Arduino Uno, HC‑SR04 ultrasonic sensor, SG90 servo motor, and a breadboard to create a simple scanning radar system. The servo sweeps the ultrasonic sensor across a set angle range, while the Arduino measures distance using timed echo pulses. Each reading is processed in the loop and sent over serial to visualize detected objects in real time. The system demonstrates basic sensor interfacing, servo control, timing functions, and serial communication in Arduino. (Sadly the code to this project has been lost over time, so once uploaded the link will rout you to the video of our presentation)</p>
         </article>
 
         <article id="proj-cubesat" class="project-card">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIQ7ov8con1nMefEvVrAqumqs-Dx8zXpzf2d3M6jJExeB0d8MNqdbiJs4&s=10" alt="CubeSat">
-            <h3>UNP Satellite Development</h3>
+            <h3><a href="https://github.com/redstegosaurus/UNP-Satellite-">UNP Satellite Development</a></h3>
             <p>In collaboration with Mississippi State University, I will be aiding in the Development of their CubeSat programs coding to help obtain atmospheric data.</p>
         </article>
+
+        <article id="proj-REstAPI" class="project-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1280px-Python-logo-notext.svg.png" alt="RestAPI">
+            <h3><a href="https://github.com/redstegosaurus/Rest-API">FastAPI Image Resizer</a></h3>
+            <p>A high-performance REST API built with Python and FastAPI that resizes images on the fly. This project demonstrates backend engineering skills including asynchronous request handling, file processing, automated testing, and containerization.</p>
+        </article>
+        <article id="proj-HTMLWEather" class="project-card">
+            <img src="https://images.seeklogo.com/logo-png/44/2/openweather-logo-png_seeklogo-440755.png" alt="Weather">
+            <h3><a href="https://github.com/redstegosaurus/HTML-Weather-App">Javascript Based Weather App</a></h3>
+            <p>This JavaScript application fetches real-time weather data for a user-specified city using the OpenWeatherMap API. When the user enters a city name, the getWeather() function validates the input and sends a fetch request with an API key. Upon receiving the JSON response, the displayWeather() function processes the data: it converts the temperature from Kelvin to Celsius, extracts the weather description, and dynamically updates the HTML to show the city name, temperature, description, and a high-resolution weather icon. It also includes error handling to alert the user if the city is not found or if the API request fails.</p>
+        </article>
+
 
 
        
